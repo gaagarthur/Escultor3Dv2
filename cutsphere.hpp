@@ -1,5 +1,6 @@
 #ifndef CUTSPHERE_HPP
 #define CUTSPHERE_HPP
+#include "figurageometrica.hpp"
 
 class CutSphere : public FiguraGeometrica
 {

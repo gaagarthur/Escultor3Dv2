@@ -1,3 +1,7 @@
 #include "figurageometrica.hpp"
 
-FiguraGeometrica::FiguraGeometrica() {}
+FiguraGeometrica::FiguraGeometrica() {
+
+
+
+}
