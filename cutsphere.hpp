@@ -6,6 +6,7 @@ class CutSphere : public FiguraGeometrica
 {
 public:
     CutSphere();
+    ~CutSphere();
 };
 
 #endif // CUTSPHERE_HPP

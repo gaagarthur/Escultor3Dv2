@@ -6,6 +6,7 @@ class PutVoxel : public FiguraGeometrica
 {
 public:
     PutVoxel();
+    ~PutVoxel();
 };
 
 #endif // PUTVOXEL_HPP

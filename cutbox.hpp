@@ -6,6 +6,7 @@ class CutBox : public FiguraGeometrica
 {
 public:
     CutBox();
+    ~CutBox();
 };
 
 #endif // CUTBOX_HPP

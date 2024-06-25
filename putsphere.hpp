@@ -6,6 +6,7 @@ class PutSphere : public FiguraGeometrica
 {
 public:
     PutSphere();
+    ~PutSphere();
 };
 
 #endif // PUTSPHERE_HPP

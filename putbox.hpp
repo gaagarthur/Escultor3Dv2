@@ -6,6 +6,7 @@ class PutBox : public FiguraGeometrica
 {
 public:
     PutBox();
+    ~PutBox();
 };
 
 #endif // PUTBOX_HPP

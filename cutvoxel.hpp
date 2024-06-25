@@ -6,6 +6,7 @@ class CutVoxel : public FiguraGeometrica
 {
 public:
     CutVoxel();
+    ~CutVoxel();
 };
 
 #endif // CUTVOXEL_HPP
