@@ -1,3 +1,6 @@
 #include "putvoxel.hpp"
 
-PutVoxel::PutVoxel() {}
+PutVoxel::PutVoxel() {
+
+
+}
