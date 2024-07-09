@@ -1,3 +1,7 @@
 #include "cutvoxel.hpp"
 
-CutVoxel::CutVoxel() {}
+CutVoxel::CutVoxel() {
+
+
+
+}

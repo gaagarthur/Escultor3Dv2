@@ -1,3 +1,7 @@
 #include "cutbox.hpp"
 
-CutBox::CutBox() {}
+CutBox::CutBox() {
+
+
+
+}
