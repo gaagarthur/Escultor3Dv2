@@ -1,7 +1,9 @@
 #include "cutvoxel.hpp"
 
-CutVoxel::CutVoxel() {
+CutVoxel::CutVoxel(int x, int y, int z) {
 
+}
 
+void CutVoxel::draw(Sculptor &t){
 
 }

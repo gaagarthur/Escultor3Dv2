@@ -1,7 +1,14 @@
 #include <iostream>
 #include "sculptor.hpp"
+#include <ctime>
 
-#include<ctime>
+#include "figurageometrica.hpp"
+#include "putvoxel.hpp"
+#include "cutvoxel.hpp"
+#include "putbox.hpp"
+#include "cutbox.hpp"
+#include "putsphere.hpp"
+#include "cutsphere.hpp"
 
 int main(void){
 
@@ -20,14 +27,14 @@ int main(void){
     santa.setColor(0.0, 0.0, 1.0, 1.0);// z axis
     for(int i=1;i<5;i++){santa.putVoxel(0,0,i);}
 
-//teste----------
+//snow
     std::srand(std::time(0));
     santa.setColor(0.83, 0.94, 0.94, 0.80);
     for(int i=0; i<64; i++){
         for(int j=0; j<64; j++){
             for(int k=0; k<64; k++){
                 if((rand()%300)%150==0){
-                    santa.putVoxel(i,j,k);
+                    std::cout <<"nomeobj.putVoxel("<< i << "," << j << "," << k <<");" << std::endl;
                 }
             }
         }
