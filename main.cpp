@@ -64,6 +64,12 @@ int main(void){
             }else if(linha.compare("cutsphere")==0){
                 que.push("s");
                 //std::cout<<"passou s\n";
+            }else if(linha.compare("putellipsoid")==0){
+                que.push("E");
+                //std::cout<<"passou E\n";
+            }else if(linha.compare("cutellipsoid")==0){
+                que.push("e");
+                //std::cout<<"passou e\n";
             }else{
                 que.push(linha);
                 //std::cout<<"passou DEFAULT\n";
@@ -168,6 +174,34 @@ int main(void){
             pfig = new CutSphere(X0,Y0,Z0,RADIUS);
             pfig->draw(t);
             delete pfig;
+            break;
+
+        case 'E':
+            /*X0 = std::stoi(que.front()); que.pop();//xcenter
+            Y0 = std::stoi(que.front()); que.pop();//ycenter
+            Z0 = std::stoi(que.front()); que.pop();//zcenter
+            X1 = std::stoi(que.front()); que.pop();//xradius
+            Y1 = std::stoi(que.front()); que.pop();//yradius
+            Z1 = std::stoi(que.front()); que.pop();//zradius
+            R = std::stof(que.front()); que.pop();
+            G = std::stof(que.front()); que.pop();
+            B = std::stof(que.front()); que.pop();
+            A = std::stof(que.front()); que.pop();
+            pfig = new PutEllipsoid(X0,Y0,Z0,X1,Y1,Z1,R,G,B,A);
+            pfig->draw(t);
+            delete pfig;*/
+            break;
+
+        case 'e':
+            /*X0 = std::stoi(que.front()); que.pop();//xcenter
+            Y0 = std::stoi(que.front()); que.pop();//ycenter
+            Z0 = std::stoi(que.front()); que.pop();//zcenter
+            X1 = std::stoi(que.front()); que.pop();//xradius
+            Y1 = std::stoi(que.front()); que.pop();//yradius
+            Z1 = std::stoi(que.front()); que.pop();//zradius
+            pfig = new Ellipsoid(X0,Y0,Z0,X1,Y1,Z1);
+            pfig->draw(t);
+            delete pfig;*/
             break;
 
         default:
