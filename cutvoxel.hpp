@@ -9,7 +9,7 @@ class CutVoxel : public FiguraGeometrica{
 public:
     CutVoxel(int x, int y, int z);
     void draw(Sculptor &t);
-    //~CutVoxel();
+    ~CutVoxel(){}//{std::cout<<"destrutor CutVoxel\n";}
 };
 
 #endif // CUTVOXEL_HPP

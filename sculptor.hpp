@@ -21,6 +21,9 @@ private:
     int nx,ny,nz; // Dimensions
     float r,g,b,a; // Current drawing color
 public:
+
+
+
 /**
 * Construtor Sculptor() cria uma matriz de Voxels
 * ---------------------------------------------

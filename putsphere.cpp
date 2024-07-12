@@ -14,5 +14,6 @@ PutSphere::PutSphere(int xcenter, int ycenter, int zcenter, int radius, float r,
 }
 
 void PutSphere::draw(Sculptor &t){
-
+    t.setColor(r,g,b,a);
+    t.putSphere(xcenter,ycenter,zcenter,radius);
 }

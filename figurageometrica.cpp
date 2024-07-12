@@ -2,6 +2,4 @@
 
 FiguraGeometrica::FiguraGeometrica() {
 
-
-
 }

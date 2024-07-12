@@ -10,5 +10,6 @@ PutBox::PutBox(int x0, int y0, int z0, int x1, int y1, int z1, float r, float g,
 }
 
 void PutBox::draw(Sculptor &t){
-
+    t.setColor(r,g,b,a);
+    t.putBox(x0,x1,y0,y1,z0,z1);
 }

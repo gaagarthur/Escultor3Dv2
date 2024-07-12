@@ -9,7 +9,7 @@ public:
 
     PutSphere(int xcenter, int ycenter, int zcenter, int radius, float r, float g, float b, float a);
     void draw(Sculptor &t);
-    //~PutSphere();
+    ~PutSphere(){}//{std::cout<<"destrutor PutSphere\n";}
 };
 
 #endif // PUTSPHERE_HPP

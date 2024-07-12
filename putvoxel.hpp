@@ -9,7 +9,7 @@ public:
 
     PutVoxel(int x, int y, int z, float r, float g, float b, float a);
     void draw(Sculptor &t);
-    //~PutVoxel();
+    ~PutVoxel(){}//{std::cout<<"destrutor PutVoxel\n";}
 };
 
 #endif // PUTVOXEL_HPP
