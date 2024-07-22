@@ -12,14 +12,18 @@
 #include <string>
 
 int main(void){
-    std::string linha, temp;
+    std::string linha, temp, Dir_results, Dir_textlist;
     std::queue<std::string> que;
     const char SPACE=32;
     std::ifstream file;
     std::ofstream rewrite;
     FiguraGeometrica *pfig;
 
-    file.open("D:/Documents/Projects/Escultor3Dv2/files/textlist.txt");
+    Dir_results = "D:/Documents/Projects/Escultor3Dv2/files/results.txt";
+    Dir_textlist = "D:/Documents/Projects/Escultor3Dv2/files/textlist.txt";
+
+
+    file.open(Dir_textlist);
     if(file.is_open()){
         while(!file.eof()){
             std::getline (file,linha,SPACE);
@@ -28,7 +32,7 @@ int main(void){
         file.close();
     }
 
-    rewrite.open("D:/Documents/Projects/Escultor3Dv2/files/results.txt");
+    rewrite.open(Dir_results);
     if(rewrite.is_open()){
         while(!que.empty()){
             rewrite<<que.front()<<std::endl;
@@ -36,7 +40,7 @@ int main(void){
         }
     }
 
-    file.open("D:/Documents/Projects/Escultor3Dv2/files/results.txt");
+    file.open(Dir_results);
     if(file.is_open()){
         while(!file.eof()){
 
@@ -210,7 +214,7 @@ int main(void){
 
     }
 
-    t.writeOFF("teste.off");
+    t.writeOFF("Santa.off");
 
 
 
