@@ -12,18 +12,22 @@
 #include <string>
 
 int main(void){
-    std::string linha, temp, Dir_results, Dir_textlist;
+    std::string linha, temp, Dir_results, Dir_FiguraCodificada, Dir_files;
     std::queue<std::string> que;
     const char SPACE=32;
     std::ifstream file;
     std::ofstream rewrite;
     FiguraGeometrica *pfig;
 
-    Dir_results = "D:/Documents/Projects/Escultor3Dv2/files/results.txt";
-    Dir_textlist = "D:/Documents/Projects/Escultor3Dv2/files/textlist.txt";
+
+    Dir_files = "D:/Documents/Projects/Escultor3Dv2/files"; // Para utilizar em outra maquina, trocar path para o diretorio "files"
+                                                            // Utilizar " / " no path
+
+    Dir_results = Dir_files + "/results.txt";
+    Dir_FiguraCodificada = Dir_files + "/FiguraCodificada.txt";
 
 
-    file.open(Dir_textlist);
+    file.open(Dir_FiguraCodificada);
     if(file.is_open()){
         while(!file.eof()){
             std::getline (file,linha,SPACE);
